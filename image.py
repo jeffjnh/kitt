@@ -6,7 +6,9 @@ from random import shuffle
 def image(searchterm, unsafe=False):
     searchterm = quote(searchterm)
 
-    safe = "&safe=" if unsafe else "&safe=active"
+    # if unsafe else safe = "&safe=active"
+
+    safe = "&safe=" 
     searchurl = "https://www.google.com/search?tbm=isch&q={0}{1}".format(searchterm, safe)
 
     # this is an old iphone user agent. Seems to make google return good results.
