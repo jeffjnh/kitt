@@ -1,8 +1,7 @@
 import praw
 from pprint import pprint
 
-reddit = praw.Reddit(user_agent='kitt')
-reddit.login('kitthediscordbot','transam82', disable_warning=True)
+
 
 
 def getReddit(channel):
